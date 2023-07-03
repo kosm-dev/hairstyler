@@ -5,3 +5,43 @@ $lg: 992px;
 $md: 768px;
 $sm: 576px;
 $xs: 374px;
+// colors
+
+$default: #8f8f8f;
+
+$default-hover: #1a1a1a;
+$accent: #b3907a;
+$accent-hover: #936a51;
+
+// fonts
+%caudex-700 {
+  font-family: "Caudex-Bold", sans-serif;
+  font-weight: 700;
+}
+
+%montserrat-700 {
+  font-family: "Montserrat-Bold", sans-serif;
+  font-weight: 700;
+}
+
+%montserrat-600 {
+  font-family: "Montserrat-SemiBold", sans-serif;
+  font-weight: 600;
+}
+%montserrat-500 {
+  font-family: "Montserrat-Medium", sans-serif;
+  font-weight: 500;
+}
+
+%roboto-700 {
+  font-family: "Roboto-Bold", sans-serif;
+  font-weight: 700;
+}
+%roboto-500 {
+  font-family: "Roboto-Medium", sans-serif;
+  font-weight: 500;
+}
+%roboto-400 {
+  font-family: "Roboto-Regular", sans-serif;
+  font-weight: 400;
+}
