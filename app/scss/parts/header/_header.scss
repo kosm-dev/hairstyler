@@ -1,34 +1,22 @@
 .header {
   padding: 24px 0;
+  background-color: #FFF;
   &__inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-
-  &_links {
-  }
-  &_link {
-  }
-  &__logo {
-  }
-  &__menu {
   }
 }
 
 .logo {
   max-width: 142px;
   width: 100%;
-  &__img {
-  }
 }
 
 .menu {
   &__list {
     display: flex;
     gap: 30px;
-  }
-  &__list-item {
   }
   &__list-link {
     padding: 18px 0;

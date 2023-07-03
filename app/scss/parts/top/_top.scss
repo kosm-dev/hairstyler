@@ -1,0 +1,68 @@
+.main {
+  &__top {
+    margin-bottom: 100px;
+  }
+}
+.top {
+  &__container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    background: $wheat-140;
+  }
+  &_link {
+  }
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__content {
+    padding-top: 140px;
+    margin-right: 34px;
+    margin-left: 72px;
+    width: 100%;
+    max-width: 615px;
+  }
+  &__suptitle {
+    margin-bottom: 15px;
+    color: $gray-180;
+    @extend %roboto-400;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0.96px;
+  }
+  &__name,
+  &__proff {
+    color: $gray-180;
+    font-size: 93px;
+    @extend %caudex-400;
+    line-height: 100%;
+    letter-spacing: 3.72px;
+    text-transform: uppercase;
+  }
+  &__proff {
+    margin-bottom: 15px;
+  }
+  &__text {
+    margin-bottom: 32px;
+  }
+  &__links {
+    margin-bottom: 100px;
+  }
+  &__img {
+    position: relative;
+    width: 100%;
+    max-width: 720px;
+  }
+  &__img:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 240px;
+    height: 100%;
+    background-image: url('../images/hero-decor.svg');
+    background-size: contain;
+  }
+}

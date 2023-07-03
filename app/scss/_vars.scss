@@ -13,11 +13,21 @@ $default-hover: #1a1a1a;
 $accent: #b3907a;
 $accent-hover: #936a51;
 
+
+$gray-180: #383838;
+$wheat-140: #E5E2DD;
+
 // fonts
 %caudex-700 {
   font-family: "Caudex-Bold", sans-serif;
   font-weight: 700;
 }
+
+%caudex-400 {
+  font-family: "Caudex-Regular", sans-serif;
+  font-weight: 400;
+}
+
 
 %montserrat-700 {
   font-family: "Montserrat-Bold", sans-serif;
