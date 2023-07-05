@@ -4,22 +4,16 @@
   }
 }
 .top {
-  &__container {
-    width: 100%;
-    max-width: 1440px;
-    margin: 0 auto;
-    background: $wheat-140;
-  }
-  &_link {
+  &__container-fluid {
+    background-color: $wheat-140;
   }
   &__inner {
     display: flex;
-    justify-content: space-between;
   }
   &__content {
     padding-top: 140px;
     margin-right: 34px;
-    margin-left: 72px;
+    margin-left: auto;
     width: 100%;
     max-width: 615px;
   }
@@ -52,7 +46,7 @@
   &__img {
     position: relative;
     width: 100%;
-    max-width: 720px;
+    max-width: 960px;
   }
   &__img:after{
     content: '';
@@ -60,7 +54,7 @@
     top: 0;
     left: 0;
     z-index: 2;
-    width: 240px;
+    width: 25%;
     height: 100%;
     background-image: url('../images/hero-decor.svg');
     background-size: contain;
