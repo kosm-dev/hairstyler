@@ -20,6 +20,7 @@
     "sass": "^1.35.2"
   },
   "dependencies": {
-    "browser-sync": "^2.27.4"
+    "browser-sync": "^2.27.4",
+    "swiper": "^10.0.4"
   }
 }

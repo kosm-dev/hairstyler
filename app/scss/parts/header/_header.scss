@@ -8,10 +8,7 @@
   }
 }
 
-.logo {
-  max-width: 142px;
-  width: 100%;
-}
+
 
 .menu {
   &__list {
@@ -29,7 +26,5 @@
   }
   &__list-link:hover {
     color: $default-hover;
-    @extend %roboto-500;
-
   }
 }

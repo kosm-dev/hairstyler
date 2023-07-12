@@ -8,7 +8,8 @@ body {
   font-size: 16px;
   @extend %roboto-400;
   line-height: 140%;
-  background-color: #F8F8F8;
+  background-color: #f8f8f8;
+  min-width: 320px;
 }
 
 .lock {
@@ -38,10 +39,28 @@ body {
 }
 
 .container {
-  max-width: 1330px;
+  max-width: 1320px;
   width: 100%;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 10px;
+}
+
+.container-fluid {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.container-custom {
+  width: 100%;
+  max-width: 1460px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.logo {
+  max-width: 142px;
+  width: 100%;
 }
 
 // burger
@@ -114,25 +133,16 @@ body {
     margin-left: 10px;
   }
 }
-.link:hover{
+.link:hover {
   background-color: $accent-hover;
 }
 .link:active {
   transform: scale(0.95);
 }
 
-.container-fluid {
-  width: 100%;
-  max-width: 1920px;
-  margin: 0 auto;
-}
-
-
-
 .socials {
   display: flex;
   gap: 0 16px;
-  &__item {}
   &__link {
     display: flex;
     justify-content: center;
@@ -140,8 +150,26 @@ body {
     background-color: #fff;
     padding: 8px;
   }
+  &--dark {
+    .socials__link {
+      background-color: $gray-180;
+    }
+  }
+
   &__icon {
     width: 24px;
     height: 24px;
   }
 }
+.title {
+  @extend %roboto-700;
+  font-size: 40px;
+  line-height: 40px;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  color: $gray-180;
+}
+.title.title--special {
+color: #fff;
+}
+

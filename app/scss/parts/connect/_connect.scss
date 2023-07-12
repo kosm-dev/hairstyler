@@ -1,0 +1,34 @@
+.main {
+  &__connect {
+    padding: 100px 0;
+  }
+}
+.connect {
+  &__inner {
+    padding: 100px 0;
+    background-color: $gray-180;
+  }
+  &__content {
+    width: 100%;
+    max-width: 414px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  &__title {
+    margin-bottom: 16px;
+  }
+  &__descr {
+    margin-bottom: 40px;
+    @extend %roboto-400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #d8d8d8;
+  }
+  &__socials {
+    display: flex;
+    justify-content: center;
+  }
+  &__socials > .socials > .socials__item  > .socials__link{
+    background-color: $gray-100;
+  }
+}

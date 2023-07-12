@@ -13,9 +13,17 @@ $default-hover: #1a1a1a;
 $accent: #b3907a;
 $accent-hover: #936a51;
 
-
+$gray-200:  #1A1A1A;
 $gray-180: #383838;
-$wheat-140: #E5E2DD;
+$gray-160: #8f8f8f;
+$gray-140: #a4a4a4;
+$gray-120: #c2c2c2;
+$gray-100: #e2e2e2;
+$gray-90: #D8D8D8;
+
+$wheat-200: #936a51;
+$wheat-140: #e5e2dd;
+$wheat-120: #F2F1EF;
 
 // fonts
 %caudex-700 {
@@ -27,7 +35,6 @@ $wheat-140: #E5E2DD;
   font-family: "Caudex-Regular", sans-serif;
   font-weight: 400;
 }
-
 
 %montserrat-700 {
   font-family: "Montserrat-Bold", sans-serif;

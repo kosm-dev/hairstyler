@@ -1,0 +1,126 @@
+.about {
+  padding: 100px 0;
+  border-top: 1px solid $gray-120;
+  border-bottom: 1px solid $gray-120;
+  &__inner {
+    display: flex;
+    gap: 0 15px;
+  }
+  &__title {
+    margin-bottom: 60px;
+    text-align: center;
+  }
+  &__images {
+    position: relative;
+    width: 100%;
+    max-width: 660px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    &:after {
+      content: "";
+      position: absolute;
+      top: 50px;
+      left: 0;
+      width: 512px;
+      height: 421px;
+      background: #eaddcd;
+    }
+    &:before {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 395px;
+      height: 400px;
+      background: #9d9993;
+      z-index: 2;
+    }
+  }
+  &__images-one {
+    width: 100%;
+    max-width: 303px;
+    position: absolute;
+    top: 0;
+    left: 72px;
+    z-index: 5;
+  }
+  &__images-two {
+    width: 100%;
+    max-width: 395px;
+    position: absolute;
+    right: 50px;
+    bottom: 50px;
+    z-index: 4;
+  }
+  &__images-one > img {
+    object-fit: cover;
+  }
+  &__images-two > img {
+    object-fit: cover;
+  }
+  &__content {
+    width: 100%;
+    max-width: 636px;
+    margin: 0 auto;
+  }
+  &__content-title {
+    margin-bottom: 16px;
+    color: $gray-180;
+    @extend %roboto-700;
+    font-size: 28px;
+    line-height: 26px;
+  }
+  &__content-text {
+    margin-bottom: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px 0;
+    color: $gray-160;
+    @extend %roboto-400;
+    font-size: 16px;
+    line-height: 22.4px;
+  }
+  &__features {
+    margin-bottom: 32px;
+    display: flex;
+    justify-content: center;
+    gap: 0 30px;
+    border: 1px solid $gray-160;
+    padding: 24px 0;
+  }
+}
+
+.about-feature {
+  position: relative;
+  padding-right: 30px;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    width: 1px;
+    height: 56px;
+    background-color: $gray-100;
+  }
+  &:last-child {
+    padding-right: 0;
+  }
+  &:last-child::after {
+    display: none;
+  }
+  &__value {
+    margin-bottom: 8px;
+    color: $wheat-200;
+    @extend %caudex-700;
+    font-size: 36px;
+    line-height: 36px;
+  }
+  &__descr {
+    color: $gray-160;
+    @extend %roboto-400;
+    font-size: 16px;
+    line-height: 26px;
+  }
+}

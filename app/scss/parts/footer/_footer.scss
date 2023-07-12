@@ -1,0 +1,100 @@
+.footer {
+  padding-top: 100px;
+  background: $gray-200;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 0 30px;
+    margin-bottom: 60px;
+  }
+  &__info {
+    width: 100%;
+    max-width: 304px;
+  }
+  
+  &__info-descr {
+    margin-top: 32px;
+  }
+  &__menu {
+    margin-top: 32px;
+  }
+  &__menu-title {
+    margin-bottom: 28px;
+  }
+  &__address-list.footer__menu-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px 0;
+  }
+  &__address-list {
+    margin-top: -8px;
+  }
+  &__menu-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px 0;
+  }
+  
+  &__menu-link {
+    display: flex;
+    align-items: center;
+    color: $gray-120;
+    @extend %roboto-400;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 0.64px;
+    transition: all 0.3s;
+  }
+  &__menu-link:hover {
+    color: #fff;
+  }
+  &__menu-icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 12px;
+  }
+  &__menu-icon path {
+    transition: all 0.3s;
+  }
+  &__menu-link:hover .footer__menu-icon path {
+    fill: #fff;
+  }
+  &__socials {
+    margin-top: 32px;
+  }
+}
+
+.footer-title {
+  color: #fff;
+  @extend %roboto-500;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 0.96px;
+  text-transform: uppercase;
+}
+
+
+.designer {
+  padding: 32px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid $gray-180;
+  &__link {
+    margin-left: 6px;
+    display: flex;
+    align-items: center;
+    color: $gray-100;
+    @extend %roboto-400;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 18px;
+  }
+  &__link:hover {
+    text-decoration-line: underline;
+  }
+  &__icon {
+    margin-left: 3px;
+  }
+}
+
