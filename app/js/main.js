@@ -12,3 +12,15 @@ const swiper = new Swiper('.works-slider', {
   },
 });
 
+const productsSwiper = new Swiper('.products__slider', {
+  slidesPerView: 4,
+  spaceBetween: 24,
+  loop: true,
+
+  navigation: {
+    nextEl: '.products__slider-next',
+    prevEl: '.products__slider-prev',
+  },
+});
+
+
