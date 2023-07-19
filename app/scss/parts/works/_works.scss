@@ -1,0 +1,24 @@
+.main {
+  &__works {
+  }
+}
+.works {
+  padding: 100px 0;
+  background-color: $gray-180;
+  &__title {
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  &__inner {
+  }
+  &__links {
+    margin-top: 32px;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.work-item {
+  &__img {
+  }
+}
