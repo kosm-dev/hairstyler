@@ -24,3 +24,18 @@ const productsSwiper = new Swiper('.products__slider', {
 });
 
 
+
+
+const burger = document.querySelector('.burger'),
+  menu = document.querySelector('.header__menu'),
+  body = document.querySelector('body'),
+  contactsLinks = document.querySelector('.header__links');
+
+burger.addEventListener('click', () => {
+  burger.classList.toggle('active');
+  menu.classList.toggle('active');
+  body.classList.toggle('lock');
+  contactsLinks.classList.toggle('active');
+});
+
+
