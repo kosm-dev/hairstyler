@@ -12,6 +12,7 @@
   }
   &__content {
     padding-top: 140px;
+    padding-bottom: 70px;
     margin-right: 34px;
     margin-left: auto;
     width: 100%;
@@ -48,16 +49,105 @@
     width: 100%;
     max-width: 960px;
   }
-  &__img:after{
-    content: '';
+  &__img img {
+    object-fit: cover;
+    height: 100%;
+  }
+  &__img:after {
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
     z-index: 2;
     width: 25%;
     height: 100%;
-    background-image: url('../images/hero-decor.svg');
-    background-size: contain;
+    background-image: url("../images/hero-decor.svg");
+    background-size: cover;
     background-repeat: no-repeat;
+  }
+}
+
+@media (max-width: 1650px) {
+  .top__content {
+    margin-left: 72px;
+  }
+}
+
+@media (max-width: 1450px) {
+  .top__content {
+    padding-top: 70px;
+  }
+  .top__name,
+  .top__proff {
+    font-size: 60px;
+  }
+  .top__links {
+    margin-bottom: 70px;
+  }
+}
+
+@media (max-width: 1350px) {
+  .top__content {
+    max-width: 570px;
+  }
+  .top__suptitle {
+    margin-bottom: 12px;
+    font-size: 16px;
+    letter-spacing: 0.64px;
+  }
+  .top__name,
+  .top__proff {
+    font-size: 44px;
+    letter-spacing: 1.76px;
+  }
+  .top__proff {
+    margin-bottom: 12px;
+  }
+  .top__text {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .top__links {
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .top__content {
+    margin-left: 32px;
+    padding-top: 50px;
+    padding-bottom: 60px;
+    margin-right: 15px;
+  }
+  .top__text {
+    margin-bottom: 24px;
+  }
+  .top__links {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 992px) {
+  .top__inner {
+    flex-direction: column;
+  }
+  .top__img {
+    max-width: none;
+    order: -1;
+  }
+  .top__img img {
+    width: 100%;
+  }
+  .top__content {
+    max-width: 100%;
+    margin: 0 auto;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .top__content {
+    padding-top: 32px;
   }
 }
