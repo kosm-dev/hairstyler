@@ -1,15 +1,39 @@
 "use strict";
 
 const swiper = new Swiper('.works-slider', {
-  // Optional parameters
-  slidesPerView: 6,
-  spaceBetween: 24,
   loop: true,
-  
+  autoplay: {
+    delay: 5000,
+  },
   navigation: {
     nextEl: '.works-slider__arrow-next',
     prevEl: '.works-slider__arrow-prev',
   },
+  breakpoints: {
+
+    320: {
+      slidesPerView: 2.3,
+      spaceBetween: 12,
+    },
+    640: {
+      slidesPerView: 3.3,
+
+    },
+    992: {
+      slidesPerView: 4,
+    },
+    1200: {
+      slidesPerView: 4.5,
+      spaceBetween: 24,
+      
+    },
+    1440: {
+      slidesPerView: 6,
+      spaceBetween: 24,
+    }
+
+  },
+
 });
 
 const productsSwiper = new Swiper('.products__slider', {
@@ -22,8 +46,6 @@ const productsSwiper = new Swiper('.products__slider', {
     prevEl: '.products__slider-prev',
   },
 });
-
-
 
 
 const burger = document.querySelector('.burger'),
