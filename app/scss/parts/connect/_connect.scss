@@ -1,9 +1,6 @@
-.main {
-  &__connect {
-    padding: 100px 0;
-  }
-}
 .connect {
+  padding: 100px 0;
+
   &__inner {
     padding: 100px 0;
     background-color: $gray-180;
@@ -28,7 +25,31 @@
     display: flex;
     justify-content: center;
   }
-  &__socials > .socials > .socials__item  > .socials__link{
+  &__socials > .socials > .socials__item > .socials__link {
     background-color: $gray-100;
+  }
+}
+
+@media (max-width: 1320px) {
+  .connect {
+    padding: 60px 0;
+  }
+}
+
+@media (max-width: 1200px) {
+  .connect > .container {
+    padding: 0;
+  }
+  .connect__inner {
+    padding: 60px 12px;
+  }
+  .connect__title {
+    margin-bottom: 12px;
+  }
+  .connect__descr {
+    margin-bottom: 32px;
+    color: #d8d8d8;
+    font-size: 14px;
+    line-height: 20px;
   }
 }
