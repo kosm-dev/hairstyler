@@ -41,6 +41,28 @@
 .product-card {
   width: 100%;
   max-width: 306px;
+  &__img {
+    position: relative;
+  }
+  &__sticker {
+    position: absolute;
+    top: 32px;
+    right: 0;
+    padding: 6px 24px;
+    color: #fff;
+    @extend %roboto-500;
+    font-size: 20px;
+    line-height: 28px;
+  }
+  &__sticker--new {
+    background-color: $gray-200;
+  }
+   &__sticker--sale {
+    background-color: #D06363;
+  }
+  &__sticker--special {
+    background-color: #D48C5E;
+  }
   &__img img {
     object-fit: cover;
   }
@@ -103,6 +125,12 @@
   .products__slider {
     margin-bottom: 24px;
   }
+  .product-card__sticker {
+    top: 12px;
+    padding: 4px 16px;
+    font-size: 12px;
+    line-height: 17px;
+}
   .product-card__content {
     padding: 12px 8px;
   }
