@@ -1,0 +1,48 @@
+.page-404 {
+  &__inner {
+    margin-top: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 390px;
+  }
+  &__title {
+    margin-bottom: 24px;
+    color: $gray-180;
+    @extend %roboto-400;
+    font-size: 198px;
+    font-weight: 500;
+    line-height: 198px;
+    letter-spacing: 7.92px;
+  }
+  &__text {
+    margin-bottom: 40px;
+    width: 100%;
+    max-width: 700px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 1200px) {
+  .page-404__title {
+    margin-bottom: 20px;
+    font-size: 120px;
+    line-height: 140px;
+  }
+}
+
+@media (max-width: 768px) {
+  .page-404__inner {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 576px) {
+  .page-404__title {
+    margin-bottom: 10px;
+    font-size: 80px;
+    line-height: 90px;
+  }
+}

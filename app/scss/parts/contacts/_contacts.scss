@@ -2,6 +2,9 @@
   padding: 100px 0;
   border-top: 1px solid $gray-120;
   border-bottom: 1px solid $gray-120;
+  &--special {
+    border: none;
+  }
   &__inner {
     display: flex;
   }
