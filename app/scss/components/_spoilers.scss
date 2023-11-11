@@ -1,0 +1,56 @@
+.spoiler {
+  padding: 32px;
+  max-width: 856px;
+  width: 100%;
+  background-color: #fff;
+}
+.spoiler__content {
+  overflow: hidden;
+}
+.spoiler__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.spoiler__title {
+  margin-right: 44px;
+  width: 100%;
+  max-width: 710px;
+  color: $gray-180;
+  @extend %roboto-700;
+  font-size: 20px;
+  line-height: 26px;
+}
+.spoiler__icon {
+  padding: 6px;
+  background-color: $wheat-120;
+}
+.spoiler__icon img {
+  transition: transform 0.2s;
+}
+.spoiler__descr {
+  width: 100%;
+  max-width: 672px;
+  height: 0;
+  transition: all 0.2s;
+}
+
+.spoiler__descr.active {
+  margin-top: 9px;
+}
+
+.spoiler__icon.open img {
+  transform: rotate(180deg);
+}
+
+@media (max-width: 768px) {
+  .spoiler {
+    padding: 24px;
+  }
+  .spoiler__title {
+    margin-right: 16px;
+    font-size: 16px;
+    line-height: 26px;
+  }
+}

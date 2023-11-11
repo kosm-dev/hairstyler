@@ -2,6 +2,13 @@
   padding: 100px 0;
   border-top: 1px solid $gray-120;
   border-bottom: 1px solid $gray-120;
+  &--special {
+    border: none;
+    padding-top: 25px;
+  }
+  &__breadcrumbs {
+    margin-bottom: 50px;
+  }
   &__inner {
     display: flex;
     gap: 0 15px;
@@ -47,6 +54,9 @@
     right: 50px;
     z-index: 4;
   }
+  &__images-two--special {
+    top: 50px;
+  }
   &__images-one > img {
     width: 303px;
     height: auto;
@@ -87,6 +97,46 @@
     gap: 10px 30px;
     border: 1px solid $gray-160;
     padding: 24px 10px;
+  }
+
+  &__secondary {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    gap: 0 15px;
+    align-items: flex-start;
+  }
+  &__secondary-content {
+    width: 100%;
+    max-width: 590px;
+  }
+  &__secondary-title {
+    margin-bottom: 16px;
+    color: $gray-180;
+    @extend %roboto-700;
+    font-size: 28px;
+    line-height: 26px;
+  }
+  &__secondary-text {
+    margin-bottom: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px 0;
+    color: $gray-160;
+    @extend %roboto-400;
+    font-size: 16px;
+    line-height: 22.4px;
+  }
+  &__secondary-images {
+  }
+  &__secondary-img {
+    width: 100%;
+    max-width: 628px;
+    margin-right: 45px;
+  }
+  &__secondary-img img {
+    width: 628px;
+    object-fit: cover;
   }
 }
 
@@ -135,6 +185,9 @@
     margin-left: 0;
     margin-right: 0;
   }
+  .about__secondary-img {
+    margin-right: 0;
+  }
 }
 
 @media (max-width: 1320px) {
@@ -149,6 +202,9 @@
     bottom: 30px;
     width: 350px;
     height: 360px;
+  }
+  .about__secondary {
+    margin-top: 50px;
   }
 }
 
@@ -190,6 +246,25 @@
   .about__content {
     max-width: none;
   }
+
+  .about__secondary-content {
+    width: 100%;
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 950px) {
+  .about__secondary {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about__secondary-content {
+    max-width: none;
+  }
+  .about__secondary-images {
+    margin-bottom: 32px;
+    order: -1;
+  }
 }
 
 @media (max-width: 850px) {
@@ -221,6 +296,9 @@
 }
 
 @media (max-width: 768px) {
+  .about--special {
+    padding-top: 12px;
+  }
   .about__images {
     margin-bottom: 165px;
   }
@@ -229,10 +307,16 @@
     font-size: 20px;
     line-height: 26px;
   }
+
   .about__content-text {
     margin-bottom: 24px;
     font-size: 14px;
     line-height: 20px;
+  }
+  .about__secondary-title {
+    margin-bottom: 12px;
+    font-size: 20px;
+    line-height: 26px;
   }
 }
 
@@ -356,7 +440,7 @@
   }
   .about__features {
     padding: 24px 15px;
-}
+  }
 }
 
 @media (max-width: 375px) {
